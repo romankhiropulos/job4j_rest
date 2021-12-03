@@ -7,7 +7,7 @@ services:
   - postgresql
 
 before_install:
-  - psql -c 'create database rest;' -U postgres
+  - psql -c 'create database fullstack_auth;' -U postgres
 
 install: true
 
