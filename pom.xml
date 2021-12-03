@@ -11,11 +11,19 @@
     <groupId>ru.job4j</groupId>
     <artifactId>job4j_rest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
     <name>job4j_rest</name>
     <description>job4j_rest</description>
     <properties>
         <java.version>15</java.version>
     </properties>
+
+    <modules>
+        <module>auth</module>
+    </modules>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
