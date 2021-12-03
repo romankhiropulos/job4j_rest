@@ -1,4 +1,4 @@
-package ru.job4j.job4j_rest;
+package ru.job4j.rest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
