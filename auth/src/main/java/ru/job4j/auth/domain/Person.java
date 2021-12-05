@@ -1,11 +1,6 @@
 package ru.job4j.auth.domain;
 
-import org.hibernate.annotations.GenericGenerator;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -18,6 +13,9 @@ public class Person {
     private String login;
 
     private String password;
+
+    @Column(name = "employee_id")
+    private int employeeId;
 
     public static Person of(int id, String login, String password) {
         Person person = new Person();

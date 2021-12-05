@@ -27,6 +27,11 @@ public class PersonController {
         ).collect(Collectors.toList());
     }
 
+    @GetMapping("/{employeeid}")
+    public List<Person> findAllByEmployeeId(@PathVariable int employeeid) {
+        return persons.findByEmployeeid(employeeid);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Person> findById(@PathVariable int id) {
         var person = this.persons.findById(id);
