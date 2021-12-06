@@ -27,9 +27,9 @@ public class PersonController {
         ).collect(Collectors.toList());
     }
 
-    @GetMapping("/{employeeid}")
+    @GetMapping("/employee/{employeeid}")
     public List<Person> findAllByEmployeeId(@PathVariable int employeeid) {
-        return persons.findByEmployeeid(employeeid);
+        return persons.findByEmployeeId(employeeid);
     }
 
     @GetMapping("/{id}")
