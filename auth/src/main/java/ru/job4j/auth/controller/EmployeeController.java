@@ -17,6 +17,12 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+/**
+ * EmployeeController,  в котором есть методы:
+ * получение всех сотрудников со всеми их аккаунтами,
+ * добавление нового аккаунта,
+ * изменение и удаление существующих аккаунтов.
+ */
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {
